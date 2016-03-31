@@ -25,7 +25,7 @@ public abstract class RegressionTask1 implements RegressionFunction {
     }
 
     public void trainNetwork(int iterationCount, LinesComponent comp) {
-        int []lSize = {inputs.length + 20, 1};
+        int []lSize = {5, 5, 1};
         ActivationFunction af = new ActivationFunction() {
             @Override
             public double activationFunction(double S) {
@@ -38,11 +38,11 @@ public abstract class RegressionTask1 implements RegressionFunction {
             }
         };
         BackPropagationNetwork network =
-                new BackPropagationNetwork(inputs.length, lSize, desiredOutputs, af);
+                new BackPropagationNetwork(inputs[0].length, lSize, desiredOutputs, af);
         network.setEpsilon(1);
-        network.setAlpha(1);
+        network.setAlpha(0.1);
         //network.disableMomentum();
-        //network.disableWeightMinimization();
+        network.disableWeightMinimization();
         int k = 0;
         for (int j = 0; j < iterationCount; ++j) {
             network.setInputs(inputs[k % (inputs.length)]);
@@ -59,20 +59,21 @@ public abstract class RegressionTask1 implements RegressionFunction {
                 for (int i = -10; i < 30; i += 2) {
                     comp.addLine(50, 300 - i * 10, 1000, 300 - i * 10);
                 }
+
                 for (double i = 0; i < 1; i += 0.025) {
                     comp.addLine(
                             50 + (int) (i * 1000),
-                            (int)(300 - fun(i) * 1000),
+                            (int)(300 - fun(i) * 100),
                             50 + (int)((i + 0.025) * 1000),
-                            (int)(300 - fun(i + 0.025) * 1000), Color.RED
+                            (int)(300 - fun(i + 0.025) * 100), new Color(255, 0, 0)
                     );
                 }
                 for (int i = 0; i < 39; ++i) {
                     comp.addLine(
                             50 + (int) (inputs[i][1] * 1000),
-                            (int) (300 - network.networkOutput(inputs[i])[0] * 1000),
+                            (int) (300 - network.networkOutput(inputs[i])[0] * 100),
                             50 + (int) (inputs[i + 1][1] * 1000),
-                            (int) (300 - network.networkOutput(inputs[i + 1])[0] * 1000), Color.BLUE
+                            (int) (300 - network.networkOutput(inputs[i + 1])[0] * 100), new Color(0, 153, 0)
                     );
                 }
             }

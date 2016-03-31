@@ -4,7 +4,7 @@ public class RegressionFunctions {
     }
 
     public static double xSin15X(double x) {
-        return x * Math.sin(15 * x) / 10;
+        return x * Math.sin(15 * x);
     }
 
     public static double powX2(double x) {

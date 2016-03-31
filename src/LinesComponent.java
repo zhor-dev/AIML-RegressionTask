@@ -1,6 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 public class LinesComponent  extends JComponent {
 
@@ -20,14 +20,14 @@ public class LinesComponent  extends JComponent {
         }
     }
 
-    private final LinkedList<Line> lines = new LinkedList<Line>();
+    private final ArrayList<Line> lines = new ArrayList<>();
 
-    public void addLine(int x1, int x2, int x3, int x4) {
-        addLine(x1, x2, x3, x4, Color.black);
+    public void addLine(int x1, int y1, int x2, int y2) {
+        addLine(x1, y1, x2, y2, new Color(204, 204, 0));
     }
 
-    public void addLine(int x1, int x2, int x3, int x4, Color color) {
-        lines.add(new Line(x1,x2,x3,x4, color));
+    public void addLine(int x1, int y1, int x2, int y2, Color color) {
+        lines.add(new Line(x1, y1, x2, y2, color));
         repaint();
     }
 
@@ -39,9 +39,13 @@ public class LinesComponent  extends JComponent {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        for (Line line : lines) {
-            g.setColor(line.color);
-            g.drawLine(line.x1, line.y1, line.x2, line.y2);
+        for (int i = 0; i < lines.size(); ++i) {
+            Line line = lines.get(i);
+            if (line != null) {
+                ((Graphics2D) g).setStroke(new BasicStroke(5));
+                g.setColor(line.color);
+                g.drawLine(line.x1, line.y1, line.x2, line.y2);
+            }
         }
     }
 
@@ -71,13 +75,13 @@ public class LinesComponent  extends JComponent {
         comp.setPreferredSize(new Dimension(1000, 500));
         testFrame.getContentPane().add(comp, BorderLayout.CENTER);
 
-        RegressionTask r = (new RegressionTask(0, 10, 40) {
+        RegressionTask1 r = (new RegressionTask1(0, 1, 40) {
             @Override
             public double fun(double x) {
-                return RegressionFunctions.xSinX(x);
+                return RegressionFunctions.xSin15X(x);
             }
         });
-        r.trainNetwork(3579525, comp);
+        r.trainNetwork(5079525, comp);
 
         //comp.clearLines();
         testFrame.pack();

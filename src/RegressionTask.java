@@ -37,7 +37,7 @@ public abstract class RegressionTask implements RegressionFunction {
             }
         };
         BackPropagationNetwork network =
-                new BackPropagationNetwork(inputs.length, lSize, desiredOutputs, af);
+                new BackPropagationNetwork(inputs[0].length, lSize, desiredOutputs, af);
         network.setEpsilon(1);
         network.setAlpha(0.1);
         //network.disableMomentum();
@@ -64,7 +64,7 @@ public abstract class RegressionTask implements RegressionFunction {
                             50 + (int) (i * 100),
                             (int)(300 - fun(i) * 100),
                             50 + (int)((i + 0.25) * 100),
-                            (int)(300 - fun(i + 0.25) * 100), Color.RED
+                            (int)(300 - fun(i + 0.25) * 100), new Color(255, 0, 0)
                     );
                 }
                 for (int i = 0; i < inputs.length - 1; ++i) {
@@ -72,30 +72,11 @@ public abstract class RegressionTask implements RegressionFunction {
                             50 + (int) (inputs[i][1] * 100),
                             (int) (300 - network.networkOutput(inputs[i])[0] * 100),
                             50 + (int) (inputs[i + 1][1] * 100),
-                            (int) (300 - network.networkOutput(inputs[i + 1])[0] * 100), Color.BLUE
+                            (int) (300 - network.networkOutput(inputs[i + 1])[0] * 100), new Color(0, 153, 0)
                     );
-                    //System.out.println(r.netOutput(i) * 100);
                 }
             }
         }
         return true;
     }
 }
-
-
-        /*double [][][]weights = new double[2][][];
-        /*weights[0] = new double[inputs.length][1];
-        //weights[1] = new double[inputs.length][inputs.length];
-        weights[1] = new double[1][inputs.length];
-        Random random = new Random(1);
-        for (int i = 0; i < inputs.length; ++i) {
-            weights[0][i][0] = random.nextDouble() * 2 - 1;
-        }
-        /*for (int i = 0; i < inputs.length; ++i) {
-            for (int j = 0; j < inputs.length; ++j) {
-                weights[1][i][j] = random.nextDouble() * 2 - 1;
-            }
-        }       for (int i = 0; i < inputs.length; ++i) {
-            weights[1][0][i] = random.nextDouble() * 2 - 1;
-        }
-        network.setWeights(weights);*/

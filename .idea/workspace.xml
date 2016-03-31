@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0682a7fd-1b9b-4cf0-9e45-d7491ffbc52d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AIMLRegressionTask/LinesComponent$2.class" afterPath="$PROJECT_DIR$/out/production/AIMLRegressionTask/LinesComponent$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AIMLRegressionTask/LinesComponent.class" afterPath="$PROJECT_DIR$/out/production/AIMLRegressionTask/LinesComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AIMLRegressionTask/RegressionFunctions.class" afterPath="$PROJECT_DIR$/out/production/AIMLRegressionTask/RegressionFunctions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AIMLRegressionTask/RegressionTask.class" afterPath="$PROJECT_DIR$/out/production/AIMLRegressionTask/RegressionTask.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AIMLRegressionTask/RegressionTask1.class" afterPath="$PROJECT_DIR$/out/production/AIMLRegressionTask/RegressionTask1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AIMLRegressionTask/LinesComponent$1.class" afterPath="$PROJECT_DIR$/out/production/AIMLRegressionTask/LinesComponent$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LinesComponent.java" afterPath="$PROJECT_DIR$/src/LinesComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RegressionFunctions.java" afterPath="$PROJECT_DIR$/src/RegressionFunctions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RegressionTask.java" afterPath="$PROJECT_DIR$/src/RegressionTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RegressionTask1.java" afterPath="$PROJECT_DIR$/src/RegressionTask1.java" />
     </list>
     <ignored path="AIMLRegressionTask.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -630,12 +622,19 @@
       <workItem from="1459084270560" duration="5549000" />
       <workItem from="1459092869289" duration="4919000" />
       <workItem from="1459156397576" duration="3223000" />
-      <workItem from="1459459640685" duration="3416000" />
+      <workItem from="1459459640685" duration="3464000" />
     </task>
+    <task id="LOCAL-00001" summary="Trained">
+      <created>1459463097453</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1459463097453</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17107000" />
+    <option name="totallyTimeSpent" value="17155000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -672,7 +671,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Trained" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trained" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

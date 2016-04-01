@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0682a7fd-1b9b-4cf0-9e45-d7491ffbc52d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AIMLRegressionTask/ActivationFunction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AIMLRegressionTask/ActivationFunctions.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AIMLRegressionTask/BackPropagationNetwork.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AIMLRegressionTask/Layer$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AIMLRegressionTask/Layer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AIMLRegressionTask/Network.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AIMLRegressionTask/Neuron.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AIMLRegressionTask/RegressionFunction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AIMLRegressionTask/RegressionFunctions.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AIMLRegressionTask/LinesComponent$1.class" afterPath="$PROJECT_DIR$/out/production/AIMLRegressionTask/LinesComponent$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AIMLRegressionTask/LinesComponent$2.class" afterPath="$PROJECT_DIR$/out/production/AIMLRegressionTask/LinesComponent$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AIMLRegressionTask/LinesComponent$Line.class" afterPath="$PROJECT_DIR$/out/production/AIMLRegressionTask/LinesComponent$Line.class" />
@@ -659,7 +650,7 @@
       <workItem from="1459156397576" duration="3223000" />
       <workItem from="1459459640685" duration="3961000" />
       <workItem from="1459515661747" duration="489000" />
-      <workItem from="1459546976920" duration="627000" />
+      <workItem from="1459546976920" duration="638000" />
     </task>
     <task id="LOCAL-00001" summary="Trained">
       <created>1459463097453</created>
@@ -691,11 +682,17 @@
       <option name="project" value="LOCAL" />
       <updated>1459547536038</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Trained">
+      <created>1459547613440</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1459547613440</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18768000" />
+    <option name="totallyTimeSpent" value="18779000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />

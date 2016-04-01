@@ -44,6 +44,16 @@ public abstract class RegressionTask1 implements RegressionFunction {
         };
         BackPropagationNetwork network =
                 new BackPropagationNetwork(inputs[0].length, lSize, desiredOutputs, af);
+        Random random = new Random(1);
+        for (int i = 0; i < network.getLayers().length; ++i) {
+            for (int j = 0; j < network.getLayers()[i].getNeurons().length; ++j) {
+                double[] w = new double[network.getLayers()[i].getNeurons()[j].getInputs().length];
+                for (int k = w.length - 1; k >= 0; --k) {
+                    w[k] = random.nextDouble() * 2 - 1;
+                }
+                network.getLayers()[i].getNeurons()[j].setWeights(w);
+            }
+        }
         network.setEpsilon(1);
         network.setAlpha(0.1);
         //network.disableMomentum();

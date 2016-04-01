@@ -1,7 +1,5 @@
 package BackPropagationLearning;
 
-import java.util.Random;
-
 public abstract class Neuron implements ActivationFunction {
 
     private double []inputs;
@@ -9,23 +7,15 @@ public abstract class Neuron implements ActivationFunction {
     private final double bias = 1;
 
     public Neuron(double []i) {
-        //this.inputs = new double[i.length + 1];
-        //inputs[0] = bias;
-        //System.arraycopy(i, 0, this.inputs, 1, i.length);
         this.inputs = i;
         weights = new double[inputs.length];
-        Random random = new Random(1);
         for (int j = 0; j < inputs.length; ++j) {
-            //int sign = Math.random() < 0.5 ? -1 : 1;
-            //weights[j] = sign * Math.random();
-            weights[j] = random.nextDouble() * 2 - 1;
+            int sign = Math.random() < 0.5 ? -1 : 1;
+            weights[j] = sign * Math.random();
         }
     }
 
     public void setInputs(double []i) {
-        //this.inputs = new double[i.length + 1];
-        //this.inputs[0] = bias;
-        //System.arraycopy(i, 0, this.inputs, 1, i.length);
         this.inputs = i;
     }
 

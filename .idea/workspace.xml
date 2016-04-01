@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0682a7fd-1b9b-4cf0-9e45-d7491ffbc52d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BackPropagationLearning/Neuron.java" afterPath="$PROJECT_DIR$/src/BackPropagationLearning/Neuron.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RegressionTask.java" afterPath="$PROJECT_DIR$/src/RegressionTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RegressionTask1.java" afterPath="$PROJECT_DIR$/src/RegressionTask1.java" />
     </list>
     <ignored path="AIMLRegressionTask.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -670,7 +667,7 @@
       <workItem from="1459156397576" duration="3223000" />
       <workItem from="1459459640685" duration="3961000" />
       <workItem from="1459515661747" duration="489000" />
-      <workItem from="1459546976920" duration="1856000" />
+      <workItem from="1459546976920" duration="1866000" />
     </task>
     <task id="LOCAL-00001" summary="Trained">
       <created>1459463097453</created>
@@ -714,11 +711,17 @@
       <option name="project" value="LOCAL" />
       <updated>1459547622558</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Trained">
+      <created>1459549242290</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1459549242290</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19997000" />
+    <option name="totallyTimeSpent" value="20007000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />

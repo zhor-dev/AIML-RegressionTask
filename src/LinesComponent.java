@@ -1,3 +1,5 @@
+import RegFunctions.RegressionFunctions;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
@@ -75,10 +77,10 @@ public class LinesComponent  extends JComponent {
         comp.setPreferredSize(new Dimension(1000, 500));
         testFrame.getContentPane().add(comp, BorderLayout.CENTER);
 
-        RegressionTask1 r = (new RegressionTask1(0, 1, 40) {
+        RegressionTask r = (new RegressionTask(0, 10, 40) {
             @Override
             public double fun(double x) {
-                return RegressionFunctions.xSin15X(x);
+                return RegressionFunctions.xSinX(x);
             }
         });
         r.trainNetwork(5079525, comp);

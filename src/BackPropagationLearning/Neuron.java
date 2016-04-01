@@ -1,3 +1,5 @@
+package BackPropagationLearning;
+
 import java.util.Random;
 
 public abstract class Neuron implements ActivationFunction {

@@ -1,3 +1,5 @@
+package BackPropagationLearning;
+
 public class ActivationFunctions {
 
     public static double alpha = 1;

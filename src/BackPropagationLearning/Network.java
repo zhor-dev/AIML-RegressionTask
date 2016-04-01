@@ -1,3 +1,5 @@
+package BackPropagationLearning;
+
 public class Network {
 
     protected Layer[] layers;

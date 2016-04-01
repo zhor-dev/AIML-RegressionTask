@@ -1,3 +1,5 @@
+package RegFunctions;
+
 public class RegressionFunctions {
     public static double xSinX(double x) {
         return x * Math.sin(x) / 10;

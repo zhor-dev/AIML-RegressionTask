@@ -1,3 +1,8 @@
+import BackPropagationLearning.ActivationFunction;
+import BackPropagationLearning.ActivationFunctions;
+import BackPropagationLearning.BackPropagationNetwork;
+import RegFunctions.RegressionFunction;
+
 import java.awt.*;
 import java.util.Random;
 
